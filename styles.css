@@ -652,21 +652,21 @@ body {
 }
 
 /* ==========================================================================
-   Skills Section (Technical Wireframe Grid - Image 1 Style)
+   Skills Section (Technical Wireframe Grid)
    ========================================================================== */
 .skills-section {
     padding: 100px 0;
-    background: #ffffff;
+    background: #f8fafc;
     position: relative;
 }
 
 .skills-tech-box {
-    background: #090c15;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
     border-radius: 16px;
     padding: 56px 48px;
-    color: #ffffff;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    color: #0f172a;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.04);
     position: relative;
 }
 
@@ -675,7 +675,7 @@ body {
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 36px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid #e2e8f0;
     padding-bottom: 24px;
 }
 
@@ -683,7 +683,7 @@ body {
     font-size: 3rem;
     font-weight: 900;
     letter-spacing: 0.04em;
-    color: #ffffff;
+    color: #0f172a;
     text-transform: uppercase;
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -693,39 +693,46 @@ body {
 .skills-tech-meta {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.85rem;
-    letter-spacing: 0.15em;
-    color: #94a3b8;
-    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: #2563eb;
+    background: #eff6ff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid #dbeafe;
+    font-weight: 700;
 }
 
 .skills-tech-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid #e2e8f0;
     position: relative;
-    background: rgba(255, 255, 255, 0.01);
+    background: #ffffff;
 }
 
 .tech-grid-cell {
     padding: 32px 28px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid #e2e8f0;
     position: relative;
-    transition: background 0.3s ease, border-color 0.3s ease;
+    background: #ffffff;
+    transition: all 0.3s ease;
 }
 
 .tech-grid-cell:hover {
-    background: rgba(255, 255, 255, 0.035);
-    border-color: rgba(56, 189, 248, 0.35);
+    background: #f8fafc;
+    border-color: #93c5fd;
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.08);
+    z-index: 2;
 }
 
 .crosshair {
     position: absolute;
-    color: rgba(255, 255, 255, 0.35);
+    color: #94a3b8;
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.95rem;
     font-weight: 300;
     pointer-events: none;
-    z-index: 2;
+    z-index: 3;
     line-height: 1;
 }
 
@@ -746,15 +753,19 @@ body {
     font-size: 0.78rem;
     font-weight: 700;
     letter-spacing: 0.12em;
-    color: #f1f5f9;
+    color: #0f172a;
     text-transform: uppercase;
 }
 
 .tech-cell-num {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: #64748b;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #2563eb;
+    background: #eff6ff;
+    padding: 2px 7px;
+    border-radius: 4px;
+    border: 1px solid #dbeafe;
 }
 
 .tech-tag-list {
@@ -768,22 +779,22 @@ body {
     font-size: 0.7rem;
     font-weight: 600;
     letter-spacing: 0.05em;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    color: #cbd5e1;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    color: #334155;
     padding: 6px 11px;
-    border-radius: 4px;
+    border-radius: 5px;
     transition: all 0.22s ease;
     cursor: default;
     user-select: none;
 }
 
 .tech-pill:hover {
-    background: rgba(56, 189, 248, 0.16);
-    border-color: #38bdf8;
-    color: #ffffff;
+    background: #eff6ff;
+    border-color: #2563eb;
+    color: #1d4ed8;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(56, 189, 248, 0.22);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.18);
 }
 
 /* ==========================================================================
