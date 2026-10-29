@@ -140,12 +140,13 @@ if ('IntersectionObserver' in window) {
     });
 }
 
-// Add a subtle parallax effect to the hero section
+// Add a subtle parallax effect to the hero section (parallax only inner content, capped to viewport)
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+    const heroContainer = document.querySelector('.hero-container');
+    if (heroContainer && scrolled <= window.innerHeight) {
+        heroContainer.style.transform = `translateY(${scrolled * 0.3}px)`;
+        heroContainer.style.opacity = `${Math.max(0, 1 - scrolled / (window.innerHeight * 0.9))}`;
     }
 });
 

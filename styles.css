@@ -256,6 +256,8 @@ body {
 .about {
     padding: 120px 0;
     background: #f7fafc;
+    position: relative;
+    z-index: 10;
 }
 
 .about-content {
