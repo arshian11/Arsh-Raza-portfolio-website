@@ -994,8 +994,27 @@ body {
 .edu-institution {
     font-size: 0.95rem;
     font-weight: 600;
-    color: #2563eb;
+    color: #475569;
     margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.edu-inst-link {
+    color: #2563eb;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: all 0.2s ease;
+    display: inline;
+}
+
+.edu-inst-link i {
+    font-size: 0.72rem;
+    margin-left: 2px;
+}
+
+.edu-inst-link:hover {
+    color: #1d4ed8;
+    text-decoration-color: #1d4ed8;
 }
 
 .edu-desc {
