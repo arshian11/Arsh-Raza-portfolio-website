@@ -74,16 +74,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Capped parallax effect for the hero content (prevents layout overlap)
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const heroContainer = document.querySelector('.hero-container');
-    if (heroContainer && scrolled <= window.innerHeight) {
-        heroContainer.style.transform = `translateY(${scrolled * 0.25}px)`;
-        heroContainer.style.opacity = `${Math.max(0, 1 - scrolled / (window.innerHeight * 0.85))}`;
-    }
-});
-
 // Lazy loading image fallback / load state
 document.querySelectorAll('.project-image img').forEach(img => {
     img.addEventListener('load', () => {
