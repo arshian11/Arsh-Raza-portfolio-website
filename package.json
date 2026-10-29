@@ -9,7 +9,7 @@
     "start": "npx serve ."
   },
   "keywords": ["portfolio", "website", "personal", "projects"],
-  "author": "Your Name",
+  "author": "Mohammed Arsh Raza",
   "license": "MIT",
   "devDependencies": {
     "serve": "^14.2.1"
