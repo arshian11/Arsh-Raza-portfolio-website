@@ -3,94 +3,342 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arsh Raza - Portfolio</title>
-    <meta name="description" content="Portfolio of Arsh Raza - AI/ML Developer & Engineer">
+    <title>Arsh Raza - AI/ML Developer & Engineer</title>
+    <meta name="description" content="Portfolio of Arsh Raza - AI/ML Developer, Deep Learning & Computer Vision Researcher">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">Arsh Raza</a>
+                <a href="#home">
+                    <span class="logo-bracket">[</span><span class="logo-accent">AR</span><span class="logo-bracket">]</span>
+                    <span class="logo-name">ARSH.RAZA</span>
+                </a>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link"><span class="nav-num">00</span> Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
+                    <a href="#experience" class="nav-link"><span class="nav-num">01</span> Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#skills" class="nav-link"><span class="nav-num">02</span> Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#projects" class="nav-link"><span class="nav-num">03</span> Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link"><span class="nav-num">04</span> Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link"><span class="nav-num">05</span> Contact</a>
                 </li>
             </ul>
-            <div class="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-actions">
+                <a href="assets/resume.pdf" class="nav-resume-btn" download="Arsh_Raza_Resume.pdf" target="_blank">
+                    <i class="fas fa-file-arrow-down"></i>
+                    <span>RESUME</span>
+                </a>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </div>
     </nav>
+
+    <!-- Sleek Technical Subheader / Ticker Bar -->
+    <div class="tech-ticker-bar">
+        <div class="container ticker-container">
+            <div class="ticker-item ticker-status">
+                <span class="ticker-pulse"></span>
+                <span class="ticker-strong">ARSH RAZA</span>
+            </div>
+            <div class="ticker-divider">/</div>
+            <div class="ticker-item">
+                <span class="ticker-label">SPECIALIZATION:</span>
+                <span class="ticker-value">AI / ML DEVELOPER & RESEARCHER</span>
+            </div>
+            <div class="ticker-divider">/</div>
+            <div class="ticker-item">
+                <span class="ticker-label">FOCUS:</span>
+                <span class="ticker-value">DEEP LEARNING • COMPUTER VISION • TRANSFORMERS</span>
+            </div>
+            <div class="ticker-divider">/</div>
+            <div class="ticker-item ticker-resume-item">
+                <span class="ticker-label">RESUME:</span>
+                <a href="assets/resume.pdf" class="ticker-resume-link" download="Arsh_Raza_Resume.pdf" target="_blank">
+                    <i class="fas fa-arrow-down"></i> DOWNLOAD [PDF]
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span> Available for AI/ML Roles & Research
+                </div>
                 <h1 class="hero-title">
                     Hi, I'm <span class="hero-name">Arsh Raza</span>
                 </h1>
-                <p class="hero-subtitle">AI/ML Developer & Engineer</p>
+                <p class="hero-subtitle">AI/ML Developer & Deep Learning Engineer</p>
                 <p class="hero-description">
-                    I am a passionate engineer for AI and ML. Eager to apply my technical skills and research-oriented mindset to develop intelligent systems that solve real-world problems. Seeking opportunities to contribute to innovative AI/ML projects to deepen my expertise in advanced algorithms and models.
+                    Passionate about pushing boundaries in Artificial Intelligence and Machine Learning. Eager to apply research-driven engineering to develop intelligent systems across Computer Vision, Transformers, and planetary scientific computing.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-layer-group"></i> View My Work
+                    </a>
+                    <a href="assets/resume.pdf" class="btn btn-resume" download="Arsh_Raza_Resume.pdf" target="_blank">
+                        <i class="fas fa-file-arrow-down"></i> Download Resume
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
                 </div>
             </div>
             <div class="hero-image">
-                <div class="hero-avatar">
-                    <i class="fas fa-user"></i>
+                <div class="hero-avatar-wrapper">
+                    <div class="hero-avatar">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="avatar-ring avatar-ring-1"></div>
+                    <div class="avatar-ring avatar-ring-2"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Experience Section (Replaces About Me) -->
+    <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a passionate software developer with expertise in ML/Ai technologies. 
-                        I enjoy solving complex problems and creating user-friendly applications that make a difference.
-                    </p>
-                    <p>
-                        My experience spans across frontend and backend development, with a strong foundation in 
-                        Python, SQL, PyTorch, TenserFlow and various frameworks. I'm always eager to learn new technologies 
-                        and take on challenging projects.
-                    </p>
+            <div class="section-header">
+                <span class="section-tag">// 01. TRACK RECORD & EXPERTISE</span>
+                <h2 class="section-title">Work & Research Experience</h2>
+                <p class="section-subtitle">Hands-on engineering and research across deep learning architectures, computer vision pipelines, and transformer models.</p>
+            </div>
+
+            <div class="experience-timeline">
+                <!-- Experience Card 1 -->
+                <div class="experience-card">
+                    <div class="experience-meta">
+                        <span class="experience-period"><i class="far fa-calendar-alt"></i> 2024 — Present</span>
+                        <span class="experience-badge exp-badge-active">Deep Learning & CV</span>
+                    </div>
+                    <div class="experience-body">
+                        <div class="experience-header">
+                            <h3 class="experience-role">AI & Deep Learning Researcher</h3>
+                            <span class="experience-domain">Computer Vision, Transformers & Planetary AI</span>
+                        </div>
+                        <ul class="experience-points">
+                            <li>Architected and trained Convolutional Neural Networks (CNN) for autonomous crater detection and classification on Martian satellite surface imagery, achieving <strong>96% precision</strong>.</li>
+                            <li>Modelled Transformer-based Masked Autoencoders for subatomic event classification at the Compact Muon Solenoid (CMS) detector at the <strong>CERN Large Hadron Collider (LHC)</strong>.</li>
+                            <li>Engineered an automated disaster damage detection and instance segmentation pipeline utilizing <strong>YOLOv7</strong> to analyze affected infrastructure from aerial imagery.</li>
+                        </ul>
+                        <div class="experience-skills">
+                            <span class="exp-tech-tag">PyTorch</span>
+                            <span class="exp-tech-tag">TensorFlow</span>
+                            <span class="exp-tech-tag">YOLOv7</span>
+                            <span class="exp-tech-tag">OpenCV</span>
+                            <span class="exp-tech-tag">Transformers</span>
+                            <span class="exp-tech-tag">Scikit-Learn</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="skills">
-                    <h3>Skills & Technologies</h3>
-                    <div class="skills-grid">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">C/C++</span>
-                        <span class="skill-tag">MATLAB</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">TenserFlow</span>
-                        <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">Hugging Face</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">SQL</span>
+
+                <!-- Experience Card 2 -->
+                <div class="experience-card">
+                    <div class="experience-meta">
+                        <span class="experience-period"><i class="far fa-calendar-alt"></i> 2023 — 2024</span>
+                        <span class="experience-badge">NLP & Multimodal AI</span>
+                    </div>
+                    <div class="experience-body">
+                        <div class="experience-header">
+                            <h3 class="experience-role">Machine Learning Developer</h3>
+                            <span class="experience-domain">Behavior Simulation & Optical Character Recognition</span>
+                        </div>
+                        <ul class="experience-points">
+                            <li>Formulated a multimodal deep learning pipeline incorporating <strong>BERT and CLIP</strong> architectures to simulate user interaction behaviors and predict content engagement KPIs.</li>
+                            <li>Built an optical character recognition (OCR) and U-Net segmentation solution tailored for transcribing 17th-century Spanish historical manuscripts while isolating decorative border elements.</li>
+                            <li>Evaluated model performance using precision-recall dynamics, attention map visual analysis, and custom validation suites.</li>
+                        </ul>
+                        <div class="experience-skills">
+                            <span class="exp-tech-tag">BERT</span>
+                            <span class="exp-tech-tag">CLIP</span>
+                            <span class="exp-tech-tag">Hugging Face</span>
+                            <span class="exp-tech-tag">U-Net</span>
+                            <span class="exp-tech-tag">PyTorch</span>
+                            <span class="exp-tech-tag">Pillow (PIL)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Card 3 -->
+                <div class="experience-card">
+                    <div class="experience-meta">
+                        <span class="experience-period"><i class="far fa-calendar-alt"></i> 2023 — 2024</span>
+                        <span class="experience-badge">Scientific Computing</span>
+                    </div>
+                    <div class="experience-body">
+                        <div class="experience-header">
+                            <h3 class="experience-role">AI / Data Contributor</h3>
+                            <span class="experience-domain">Remote Sensing & Adversarial Robustness</span>
+                        </div>
+                        <ul class="experience-points">
+                            <li>Processed hyperspectral and remote sensing data for lunar elemental surface mapping models inspired by ISRO Chandrayaan-2 datasets.</li>
+                            <li>Conducted adversarial vulnerability testing and robustness assessments on multimodal deep learning models under input perturbation attacks.</li>
+                        </ul>
+                        <div class="experience-skills">
+                            <span class="exp-tech-tag">Python</span>
+                            <span class="exp-tech-tag">NumPy</span>
+                            <span class="exp-tech-tag">Pandas</span>
+                            <span class="exp-tech-tag">Matplotlib</span>
+                            <span class="exp-tech-tag">Git</span>
+                            <span class="exp-tech-tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section (Technical Wireframe Grid) -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="skills-tech-box">
+                <!-- Skills Header Row -->
+                <div class="skills-tech-header">
+                    <div class="skills-tech-title-wrap">
+                        <h2 class="skills-tech-title">SKILLS</h2>
+                    </div>
+                    <div class="skills-tech-meta">
+                        <span class="skills-meta-item">STACK • 40+</span>
+                    </div>
+                </div>
+
+                <!-- Wireframe Technical Grid -->
+                <div class="skills-tech-grid">
+                    <!-- Box 01 -->
+                    <div class="tech-grid-cell">
+                        <span class="crosshair crosshair-tl">+</span>
+                        <div class="tech-cell-header">
+                            <span class="tech-cell-title">DEVELOPMENT & CORE</span>
+                            <span class="tech-cell-num">01</span>
+                        </div>
+                        <div class="tech-tag-list">
+                            <span class="tech-pill">PYTHON</span>
+                            <span class="tech-pill">C / C++</span>
+                            <span class="tech-pill">MATLAB</span>
+                            <span class="tech-pill">JAVASCRIPT</span>
+                            <span class="tech-pill">SQL</span>
+                            <span class="tech-pill">MONGODB</span>
+                            <span class="tech-pill">REST API</span>
+                            <span class="tech-pill">DATA STRUCTURES</span>
+                        </div>
+                    </div>
+
+                    <!-- Box 02 -->
+                    <div class="tech-grid-cell">
+                        <span class="crosshair crosshair-tl">+</span>
+                        <div class="tech-cell-header">
+                            <span class="tech-cell-title">AI & DEEP LEARNING</span>
+                            <span class="tech-cell-num">02</span>
+                        </div>
+                        <div class="tech-tag-list">
+                            <span class="tech-pill">PYTORCH</span>
+                            <span class="tech-pill">TENSORFLOW</span>
+                            <span class="tech-pill">TRANSFORMERS</span>
+                            <span class="tech-pill">HUGGING FACE</span>
+                            <span class="tech-pill">CNNs</span>
+                            <span class="tech-pill">U-NET</span>
+                            <span class="tech-pill">AUTOENCODERS</span>
+                            <span class="tech-pill">YOLOv7</span>
+                        </div>
+                    </div>
+
+                    <!-- Box 03 -->
+                    <div class="tech-grid-cell">
+                        <span class="crosshair crosshair-tl">+</span>
+                        <div class="tech-cell-header">
+                            <span class="tech-cell-title">COMPUTER VISION & NLP</span>
+                            <span class="tech-cell-num">03</span>
+                        </div>
+                        <div class="tech-tag-list">
+                            <span class="tech-pill">OPENCV</span>
+                            <span class="tech-pill">BERT</span>
+                            <span class="tech-pill">CLIP</span>
+                            <span class="tech-pill">OBJECT DETECTION</span>
+                            <span class="tech-pill">IMAGE SEGMENTATION</span>
+                            <span class="tech-pill">OCR</span>
+                            <span class="tech-pill">NLP</span>
+                            <span class="tech-pill">PILLOW (PIL)</span>
+                        </div>
+                    </div>
+
+                    <!-- Box 04 -->
+                    <div class="tech-grid-cell">
+                        <span class="crosshair crosshair-tl">+</span>
+                        <div class="tech-cell-header">
+                            <span class="tech-cell-title">DATA SCIENCE & SCIENTIFIC</span>
+                            <span class="tech-cell-num">04</span>
+                        </div>
+                        <div class="tech-tag-list">
+                            <span class="tech-pill">NUMPY</span>
+                            <span class="tech-pill">PANDAS</span>
+                            <span class="tech-pill">SCIKIT-LEARN</span>
+                            <span class="tech-pill">SCIPY</span>
+                            <span class="tech-pill">MATPLOTLIB</span>
+                            <span class="tech-pill">SEABORN</span>
+                            <span class="tech-pill">DATA ANALYSIS</span>
+                            <span class="tech-pill">STATISTICS</span>
+                        </div>
+                    </div>
+
+                    <!-- Box 05 -->
+                    <div class="tech-grid-cell">
+                        <span class="crosshair crosshair-tl">+</span>
+                        <div class="tech-cell-header">
+                            <span class="tech-cell-title">TOOLS, CLOUD & DEVOPS</span>
+                            <span class="tech-cell-num">05</span>
+                        </div>
+                        <div class="tech-tag-list">
+                            <span class="tech-pill">GIT</span>
+                            <span class="tech-pill">GITHUB</span>
+                            <span class="tech-pill">DOCKER</span>
+                            <span class="tech-pill">LINUX / BASH</span>
+                            <span class="tech-pill">JUPYTER</span>
+                            <span class="tech-pill">VS CODE</span>
+                            <span class="tech-pill">VERCEL</span>
+                            <span class="tech-pill">POSTMAN</span>
+                        </div>
+                    </div>
+
+                    <!-- Box 06 -->
+                    <div class="tech-grid-cell">
+                        <span class="crosshair crosshair-tl">+</span>
+                        <div class="tech-cell-header">
+                            <span class="tech-cell-title">RESEARCH & SPECIALIZATION</span>
+                            <span class="tech-cell-num">06</span>
+                        </div>
+                        <div class="tech-tag-list">
+                            <span class="tech-pill">PLANETARY AI</span>
+                            <span class="tech-pill">CERN CMS PHYSICS ML</span>
+                            <span class="tech-pill">ADVERSARIAL ML</span>
+                            <span class="tech-pill">REMOTE SENSING</span>
+                            <span class="tech-pill">MODEL BENCHMARKING</span>
+                            <span class="tech-pill">PROMPT ENGINEERING</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -100,7 +348,12 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-header">
+                <span class="section-tag">// 03. FEATURED WORK</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Real-world AI implementations, computer vision models, and applied research repositories.</p>
+            </div>
+            
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card">
@@ -108,22 +361,21 @@
                         <img src="https://raw.githubusercontent.com/arshian11/Adobe-NLP-PS-Mid-prep/refs/heads/main/assests/Capture2.JPG" alt="User Behaviour and Content Simulation">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/arshian11/Adobe-NLP-PS-Mid-prep" target="_blank" class="project-link">
+                                <a href="https://github.com/arshian11/Adobe-NLP-PS-Mid-prep" target="_blank" class="project-link" aria-label="GitHub Repository">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">User Behaviour and Content Simulation</h3>
                         <p class="project-description">
-                         Developed a ML model to try to solve the problem of behavior simulation (Task-1) and content                                   simulation (Task-2), thereby helping marketers to estimate user engagement on their social media                               content as well as create content that elicits the desired key performance indicators (KPI) from                               the audience.
+                          Developed a machine learning model to solve behavior simulation and content simulation, helping marketers estimate user engagement and forecast desired KPIs.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">BERT</span>
                             <span class="tech-tag">CLIP</span>
-                            <span class="tech-tag">Tensorflow</span>
+                            <span class="tech-tag">TensorFlow</span>
                             <span class="tech-tag">Hugging Face</span>
                         </div>
                     </div>
@@ -132,23 +384,19 @@
                 <!-- Project 2 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://thumbs.dreamstime.com/b/tornado-storm-damage-house-home-destroyed-wind-14895780.jpg"                          alt="Natural Disaster Image Detection and Segmentation">
+                        <img src="https://thumbs.dreamstime.com/b/tornado-storm-damage-house-home-destroyed-wind-14895780.jpg" alt="Natural Disaster Image Detection and Segmentation">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/arshian11/Damage-Detection-and-segmentation-YOLO-" target="_blank"                                   class="project-link">
+                                <a href="https://github.com/arshian11/Damage-Detection-and-segmentation-YOLO-" target="_blank" class="project-link" aria-label="GitHub Repository">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <!-- <a href="#" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a> -->
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Natural Disaster Image Detection and Segmentation</h3>
+                        <h3 class="project-title">Natural Disaster Image Detection & Segmentation</h3>
                         <p class="project-description">
-                          Developed a convolutional neural networks (CNNs) to identify and segment damaged infrastructure
-                          elements from satellite imagery with 95% accuracy, enabling faster disaster response and resource allocation by 60%
+                          Employed YOLOv7 convolutional architectures to identify and segment damaged infrastructure elements from aerial imagery with 95% accuracy for emergency relief.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">YOLOv7</span>
@@ -158,38 +406,29 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://prod-images-static.radiopaedia.org/images/220869/76052f7902246ff862f52f5d3cd9cd_big_gallery.jpg" alt="Medical
-                          vs. Non-Medical Image Classifier">
+                        <img src="https://prod-images-static.radiopaedia.org/images/220869/76052f7902246ff862f52f5d3cd9cd_big_gallery.jpg" alt="Medical vs. Non-Medical Image Classifier">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/arshian11/Med-vs-NonMed-Classifier" target="_blank" class="project-
-                                  link">
+                                <a href="https://github.com/arshian11/Med-vs-NonMed-Classifier" target="_blank" class="project-link" aria-label="GitHub Repository">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <!-- <a href="#" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a> -->
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Medical vs. Non-Medical Image Classifier</h3>
                         <p class="project-description">
-                          A machine learning pipeline to automatically classify images as medical or non-medical from a 
-                          mixed set of inputs(URLs, PDFs, etc). It is a a Python-based Computer Vision CLI application with 
-                          web scraping capabilities.
+                          A machine learning pipeline to automatically classify images as medical or non-medical from heterogeneous input sources (URLs, PDFs), with web scraping integrations.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">PyTorch</span>
-                            <span class="tech-tag">Vision Transformer (ViT)</span>
+                            <span class="tech-tag">Vision Transformer</span>
                             <span class="tech-tag">ResNet18</span>
-                            <span class="tech-tag">CloudScraper</span>
-                            <span class="tech-tag">pdf2image</span>
-                            <span class="tech-tag">Pillow (PIL)</span>
-                          
+                            <span class="tech-tag">Pillow</span>
                         </div>
                     </div>
                 </div>
@@ -200,57 +439,48 @@
                         <img src="https://raw.githubusercontent.com/arshian11/ArshRaza.github.io/main/images/mars_crater.jpg" alt="Mars Crater detection">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/arshian11/Mars-Crater-Detection" target="_blank" class="project-
-                                  link">
+                                <a href="https://github.com/arshian11/Mars-Crater-Detection" target="_blank" class="project-link" aria-label="GitHub Repository">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <!-- <a href="#" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a> -->
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Mars Crater detection</h3>
+                        <h3 class="project-title">Mars Crater Detection & Classification</h3>
                         <p class="project-description">
-                          Developed and trained a convolutional neural network (CNN) to accurately detect and classify Martian surface craters from
-                          satellite imagery, achieving 96% precision and supporting automated planetary surface analysis.
+                          Developed and trained deep convolutional neural networks (CNN) to detect and classify Martian surface craters from satellite imagery, achieving 96% precision.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">OpenCV</span>
-                            <span class="tech-tag">TenserFlow</span>
+                            <span class="tech-tag">TensorFlow</span>
                             <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Scikit-Learn</span>
                         </div>
                     </div>
                 </div>
 
-                
                 <!-- Project 5 -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="https://hmml.org/assets/img/exhibitions/golden-age-of-spain/1.1.4-AARB_00004_IMG_001v.jpg" alt="17th Century Spanish Text Recognition">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/arshian11/Transformer_OCR" target="_blank" class="project-link">
+                                <a href="https://github.com/arshian11/Transformer_OCR" target="_blank" class="project-link" aria-label="GitHub Repository">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <!-- <a href="#" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a> -->
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">17th Century Spanish Text Recognition</h3>
                         <p class="project-description">
-                          Build a model based on transformer architectures for optically recognizing the text of 17th Century Spanish data source.
-                          THe model is able to detect the main text in each page, while disregarding other embellishments.
+                          Engineered a model based on transformer architectures for optically recognizing text in 17th-century Spanish archives, segmenting main text while discarding ornamental noise.
+                        </p>
                         <div class="project-tech">
                             <span class="tech-tag">Transformers</span>
                             <span class="tech-tag">PyTorch</span>
-                            <span class="tech-tag">Pillow (PIL)</span>
                             <span class="tech-tag">U-Net</span>
+                            <span class="tech-tag">Pillow</span>
                         </div>
                     </div>
                 </div>
@@ -261,26 +491,95 @@
                         <img src="https://cds.cern.ch/images/CERN-PHOTO-202108-102-11/file?size=large" alt="CMS Event Classification">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/arshian11/CMS-Event-Classification" target="_blank" class="project-link">
+                                <a href="https://github.com/arshian11/CMS-Event-Classification" target="_blank" class="project-link" aria-label="GitHub Repository">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <!-- <a href="#" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a> -->
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">CMS Event Classification</h3>
+                        <h3 class="project-title">CMS Event Classification (CERN LHC)</h3>
                         <p class="project-description">
-                          Modeled a Masked Transformer Autoencoders for event classifications at the Compact Muon Solenoid (CMS) a general-purpose 
-                          detector at the Large Hadron Collider (LHC).
+                          Modeled Masked Transformer Autoencoders for particle collision event classifications at the Compact Muon Solenoid (CMS) detector at the Large Hadron Collider.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">PyTorch</span>
-                            <span class="tech-tag">Sklearn</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">Numpy</span>
+                            <span class="tech-tag">Autoencoders</span>
+                            <span class="tech-tag">Scikit-Learn</span>
+                            <span class="tech-tag">NumPy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// 04. ACADEMIC FOUNDATIONS</span>
+                <h2 class="section-title">Education & Credentials</h2>
+                <p class="section-subtitle">Academic degree, specialized computer science coursework, and applied research training.</p>
+            </div>
+
+            <div class="education-grid">
+                <!-- Education Card 1 -->
+                <div class="education-card">
+                    <div class="edu-card-top">
+                        <div class="edu-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <span class="edu-period"><i class="far fa-calendar-alt"></i> 2021 — 2025</span>
+                    </div>
+                    <div class="edu-card-body">
+                        <h3 class="edu-degree">Bachelor of Technology (B.Tech)</h3>
+                        <p class="edu-institution">Computer Science & Engineering</p>
+                        <p class="edu-desc">
+                            Core emphasis on Artificial Intelligence, Machine Learning algorithms, and high-performance computational systems. Completed extensive coursework and research projects in Computer Vision, Deep Learning, and data structures.
+                        </p>
+                        
+                        <div class="edu-courses">
+                            <span class="edu-course-label">Relevant Coursework:</span>
+                            <div class="edu-course-tags">
+                                <span class="edu-tag">Machine Learning</span>
+                                <span class="edu-tag">Deep Learning</span>
+                                <span class="edu-tag">Computer Vision</span>
+                                <span class="edu-tag">Data Structures & Algorithms</span>
+                                <span class="edu-tag">DBMS & SQL</span>
+                                <span class="edu-tag">Operating Systems</span>
+                                <span class="edu-tag">Linear Algebra</span>
+                                <span class="edu-tag">Probability & Statistics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Card 2 -->
+                <div class="education-card">
+                    <div class="edu-card-top">
+                        <div class="edu-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <span class="edu-period"><i class="far fa-calendar-alt"></i> Ongoing Research</span>
+                    </div>
+                    <div class="edu-card-body">
+                        <h3 class="edu-degree">Advanced AI & ML Specialization</h3>
+                        <p class="edu-institution">Applied Research & Competitive Problem Solving</p>
+                        <p class="edu-desc">
+                            Hands-on exploration in cutting-edge neural architectures including Vision Transformers (ViT), Masked Autoencoders, and Multimodal LLM representations. Active participant in scientific ML challenges and open-source contributions.
+                        </p>
+                        
+                        <div class="edu-courses">
+                            <span class="edu-course-label">Areas of Specialization:</span>
+                            <div class="edu-course-tags">
+                                <span class="edu-tag">Transformer Architectures</span>
+                                <span class="edu-tag">Vision Transformers (ViT)</span>
+                                <span class="edu-tag">Object Detection & Segmentation</span>
+                                <span class="edu-tag">Multimodal Embeddings</span>
+                                <span class="edu-tag">Adversarial Robustness</span>
+                                <span class="edu-tag">Scientific AI / Remote Sensing</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -291,14 +590,12 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Let's Work Together</h2>
+            <div class="section-header">
+                <span class="section-tag">// 05. REACH OUT</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Interested in collaborations, engineering opportunities, or innovative AI/ML projects. Feel free to connect!</p>
+            </div>
             <div class="contact-content">
-                <div class="contact-text">
-                    <p>
-                        I'm always interested in new opportunities and exciting projects. 
-                        Whether you have a question or just want to say hi, feel free to reach out!
-                    </p>
-                </div>
                 <div class="contact-links">
                     <a href="mailto:marshraza28@gmail.com" class="contact-link">
                         <i class="fas fa-envelope"></i>
@@ -306,16 +603,16 @@
                     </a>
                     <a href="https://www.linkedin.com/in/arsh-raza-26529b255/" target="_blank" class="contact-link">
                         <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
+                        <span>LinkedIn Profile</span>
                     </a>
                     <a href="https://github.com/arshian11" target="_blank" class="contact-link">
                         <i class="fab fa-github"></i>
-                        <span>GitHub</span>
+                        <span>GitHub @arshian11</span>
                     </a>
-                    <!-- <a href="https://twitter.com/yourhandle" target="_blank" class="contact-link">
-                        <i class="fab fa-twitter"></i>
-                        <span>Twitter</span>
-                    </a> -->
+                    <a href="assets/resume.pdf" class="contact-link contact-resume-link" download="Arsh_Raza_Resume.pdf" target="_blank">
+                        <i class="fas fa-file-arrow-down"></i>
+                        <span>Download Full Resume (PDF)</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -323,8 +620,14 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Arsh Raza. All rights reserved.</p>
+        <div class="container footer-container">
+            <div class="footer-left">
+                <span class="footer-logo">ARSH.RAZA</span>
+                <span class="footer-sub">&copy; 2025 Arsh Raza. All rights reserved.</span>
+            </div>
+            <div class="footer-right">
+                <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i> Back to Top</a>
+            </div>
         </div>
     </footer>
 
